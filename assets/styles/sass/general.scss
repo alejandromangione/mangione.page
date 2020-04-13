@@ -1,0 +1,133 @@
+/* General */
+/*********************************/
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+.tint-blue {
+  color: #9ED3F4;
+}
+
+.html-tag {
+  color: #E86D89;
+}
+
+.big-size {
+  font-size: 150%;
+}
+
+.medium-size {
+  font-size: 120%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.top-30 {
+  margin-top: 30px;
+}
+
+.continue-icon {
+  max-width: 35px;
+}
+
+h1 {
+  color: $blue;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+p {
+  color: $blue;
+  line-height: 250%;
+}
+
+section {
+
+  &.intro {
+    background-color: #252D3A;
+    color: $orange-light;
+    font-family: 'Monaco', monospace;
+    line-height: 300%;
+    
+    h1, h2 {
+      font-family: 'Monaco', monospace;
+      display: inline-block;
+      color: $orange-light;
+      margin: 0;
+    }
+    
+    h1 {
+      font-size: 26px;
+    }
+
+    h2 {
+      font-size: 20px;
+    }
+  }
+
+  &.about-me {
+
+    .icon {
+      max-width: 100px;
+    }
+  }
+
+  &.contact {
+    background-image: url('/assets/images/contact_bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;  
+
+    h2 {
+      text-transform: uppercase;
+      font-weight: 300;
+      color:#707070;
+      font-size: 26px;
+    }
+
+    h3 {
+      color: $blue
+    }
+  }
+
+}
+
+.text { 
+  position: relative;
+  display: inline-block;
+  font-family: Monaco, Arial, Helvetica, sans-serif;
+  line-height: 24px;
+  font-size: 24px;
+  color: white;
+  min-width: 360px;
+}
+
+.text::after {
+  content: "";
+  position: relative;
+  top: 3px;
+  left: 5px;
+  display: inline-block;
+  background-color: #606060;
+  vertical-align: top;
+  width: 10px;
+  height: 24px;
+  animation: blink 1s step-end infinite;
+  -webkit-animation: blink 1s step-end infinite;
+}
+
+@-webkit-keyframes blink {
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+@keyframes blink {
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}

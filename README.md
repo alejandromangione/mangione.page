@@ -7,7 +7,7 @@ sass --watch ./assets/styles/sass/app.scss:./assets/styles/app.css --style=compr
 
 ## Run Server (optional)
 - Ruby
-ruby -run -e httpd .
+ruby -run -e httpd . -p 9090
 
 - PHP
 php -S localhost:9090 -t .

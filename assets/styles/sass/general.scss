@@ -26,10 +26,6 @@ body {
   text-align: center;
 }
 
-.top-30 {
-  margin-top: 30px;
-}
-
 .continue-icon {
   max-width: 35px;
 }
@@ -91,6 +87,10 @@ section {
 
     h3 {
       color: $blue
+    }
+
+    .icon-media img {
+      max-width: 60px;
     }
   }
 

@@ -8,11 +8,16 @@
   .block-sm {
     display: block !important;
   }
+
 }
  
 @media (max-width: 768px) {
   .hide-md {
     display: none;
+  }
+
+  .text-md-center {
+    text-align: center;
   }
 }
 

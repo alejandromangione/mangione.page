@@ -1,13 +1,15 @@
-### My personal website
+## Personal website
 
-My previous website I've done with Jekyll and them I've realized that it was overkill for a simple page. Nothing fancy here, just HTML, CSS and Javascript.
+The previous version of my website I did using Jekyll and them I realized that it was a total overkill for a single page. Nothing fancy here, just HTML, ~~CSS and Javascript~~, Sass, Babel.
 
-## Run Sass
-sass --watch ./assets/styles/sass/app.scss:./assets/styles/app.css --style=compressed --poll
+### Local server
 
-## Run Server (optional)
+Run:
+
+`$ foreman start`
+
+#### Dependencies
 - Ruby
-ruby -run -e httpd . -p 9090
-
-- PHP
-php -S localhost:9090 -t .
+  - foreman
+- Sass
+- Babel

@@ -4,6 +4,7 @@
 body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
+  margin: 0;
 }
 
 .tint-blue {
@@ -41,21 +42,28 @@ p {
   line-height: 250%;
 }
 
+@media (max-width: 768px) {
+  p {
+    line-height: 175%;
+  }
+}
+
 section {
+  height: 100vh;
 
   &.intro {
     background-color: #252D3A;
     color: $orange-light;
     font-family: 'Monaco', monospace;
     line-height: 300%;
-    
+
     h1, h2 {
       font-family: 'Monaco', monospace;
       display: inline-block;
       color: $orange-light;
       margin: 0;
     }
-    
+
     h1 {
       font-size: 26px;
     }
@@ -63,6 +71,7 @@ section {
     h2 {
       font-size: 20px;
     }
+
   }
 
   &.about-me {
@@ -70,13 +79,17 @@ section {
     .icon {
       max-width: 100px;
     }
+
+    .dev-icons .col {
+      padding: 15px;
+    }
   }
 
   &.contact {
     background-image: url('/assets/images/contact_bg.jpg');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;  
+    background-size: cover;
 
     h2 {
       text-transform: uppercase;
@@ -96,7 +109,7 @@ section {
 
 }
 
-.text { 
+.text {
   position: relative;
   display: inline-block;
   font-family: Monaco, Arial, Helvetica, sans-serif;

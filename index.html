@@ -8,14 +8,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <link rel="icon" type="image/png" href="/assets/images/icon.png">
-    <link href="./assets/styles/app.css" rel="stylesheet">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
 
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap-grid.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/assets/images/icon.png">
+    <link href="./assets/app.css" rel="stylesheet">
+
+    <script src="./assets/app.js"></script>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap-grid.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
+
+    <!-- fullpage.js
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.css" integrity="sha512-TD/aL30dNLN0VaHVoh9voFlNi7ZuWQYtV4bkIJv2ulZ8mEEkZJ7IyGvDthMKvIUwzLmPONnjQlAi55HTERVXpw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js" integrity="sha512-gSf3NCgs6wWEdztl1e6vUqtRP884ONnCNzCpomdoQ0xXsk06lrxJsR7jX5yM/qAGkPGsps+4bLV5IEjhOZX+gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    -->
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-PM077VEKQ1"></script>
@@ -31,9 +39,9 @@
   <body>
     <main id="fullpage">
 
-      <section class="section intro">
+      <section class="section d-flex align-items-center intro">
         <div class="container">
-          <header class="row">
+          <header class="row align-items-center">
               <div class="col-12 opacity-40">
                 <span class="tint-blue">&lt;</span><span class="init-html">!DOCTYPE html</span><span class="tint-blue">/&gt;</span>
               </div>
@@ -60,7 +68,7 @@
                 <span class="tint-blue">&lt;</span><span class="html-tag">meta</span> property="frameworks.experience" content<span class="tint-blue">=</span>"Rails, Angular"<span class="tint-blue">/&gt;</span>
               </div>
               <div class="col-12 opacity-60 hide-md">
-                <span class="tint-blue">&lt;</span><span class="html-tag">meta</span> name<span class="tint-blue">=</span>"geo.position" content<span class="tint-blue">=</span>"43.653226;-79.383184"<span class="tint-blue">/&gt;</span>
+                <span class="tint-blue">&lt;</span><span class="html-tag">meta</span> name<span class="tint-blue">=</span>"geo.position" content<span class="tint-blue">=</span>"49.313252,-123.100020"<span class="tint-blue">/&gt;</span>
               </div>
               <div class="col-12 opacity-40 hide-md">
                 <span class="tint-blue">&lt;</span><span class="html-tag">meta</span> name<span class="tint-blue">=</span>"robots" content<span class="tint-blue">=</span>"index, nofollow"<span class="tint-blue">/&gt;</span>
@@ -81,14 +89,16 @@
 
           <div class="row justify-content-center">
             <div class="col-md-2 col-lg-1 text-center">
-              <a onclick="$.fn.fullpage.moveSectionDown()" href="javascript:;"><img src="./assets/images/continue_icon.svg" alt="Continue" class="continue-icon"></a>
+              <a href="#about-me" id="startBtn" >
+                <img src="./assets/images/continue_icon.svg" alt="Continue" class="continue-icon">
+              </a>
             </div>
           </div>
 
         </div>
       </section>
 
-      <section class="section about-me">
+      <section id="about-me" class="section d-flex align-items-center about-me">
         <div class="container">
 
             <div class="row">
@@ -99,7 +109,7 @@
 
             <div class="row">
               <div class="col-12">
-                <p>I have more than 10 years experience with technologies from frontend to backend. Always interested in new technologies, I've participated in Meetups and events. I have extensive experience with Ruby on Rails, Redis, Sidekiq, PostgreSQL and MySQL.</p>
+                <p>I have over 10 years of experience developing webapps. Always interested in new technologies, I've participated in Meetups and events. I have extensive experience with HTML, CSS, Javascript, Ruby on Rails, Postgres and MySQL.</p>
               </div>
             </div>
 
@@ -108,25 +118,25 @@
                 <figure class="text-center">
                   <img src="./assets/images/frontend_icon.svg" alt="Frontend" class="icon">
                 </figure>
-                <p>As frontend I have experience with HTML5, CSS3, SASS, Javascript, React, Angular, Gulp, Bootstrap, Foundation and many frontend libraries.</p>
+                <p>As a frontend, I have experience with HTML5, CSS3, SASS, Javascript, React, Angular, Gulp, Bootstrap, Foundation and many frontend libraries.</p>
               </div>
 
               <div class="col-12 col-lg-4">
                   <figure class="text-center">
                       <img src="./assets/images/backend_icon.svg" alt="Backend" class="icon">
                   </figure>
-                  <p>As backend I have experience with Ruby on Rails, Redis, Sidekiq, PostgreSQL and MySQL.</p>
+                  <p>As a backend, I have experience with Ruby on Rails, Redis, Sidekiq, Postgres and MySQL.</p>
               </div>
 
               <div class="col-12 col-lg-4">
                   <figure class="text-center">
                       <img src="./assets/images/devops_icon.svg" alt="Devops" class="icon">
                   </figure>
-                  <p>As Devops I have experience with Docker, I've configured LAMP Server, Nginx, AWS with Chef and Opsworks.</p>
+                  <p>As a devops, I have experience with Ansible, CIs, Shell scripts, server automations.</p>
               </div>
             </div>
 
-            <div class="row top-30 bottom-30">
+            <div class="row dev-icons top-30 bottom-30">
               <div class="col">
                 <img src="./assets/images/html5_icon.svg" alt="HTML5">
               </div>
@@ -140,7 +150,7 @@
                 <img src="./assets/images/ruby_icon.svg" alt="Ruby">
               </div>
               <div class="col">
-                <img src="./assets/images/angular_icon.svg" alt="Angular">
+                <img src="./assets/images/react_icon.svg" alt="React">
               </div>
               <div class="col">
                 <img src="./assets/images/chrome_icon.svg" alt="Chrome">
@@ -160,13 +170,13 @@
             </div>
       </section>
 
-      <!-- <section class="section projects">
+      <!-- <section class="section d-flex align-items-center projects">
         <div class="container">
           <h1>&gt; projects</h1>
         </div>
       </section> -->
 
-      <section class="section contact">
+      <section id="#contact" class="section d-flex align-items-center contact">
         <div class="container">
           <div class="row">
             <div class="col">
@@ -195,12 +205,6 @@
       </section>
 
     </main>
-
-    <script type="text/javascript">
-      $('#fullpage').fullpage({
-        responsiveWidth: 900
-      });
-    </script>
 
   </body>
 

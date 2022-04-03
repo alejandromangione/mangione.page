@@ -2,7 +2,7 @@
 /*********************************/
 
 @for $i from 1 through 9 {
-  $value: $i / 10;
+  $value: calc($i / 10);
 
   .opacity-#{$i * 10} {
     opacity: $value;

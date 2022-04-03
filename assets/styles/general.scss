@@ -40,10 +40,8 @@ h1 {
 p {
   color: $blue;
   line-height: 250%;
-}
 
-@media (max-width: 768px) {
-  p {
+  @media (max-width: 768px) {
     line-height: 175%;
   }
 }
@@ -78,6 +76,10 @@ section {
 
     .icon {
       max-width: 100px;
+
+      @media (max-width: 425px) {
+        max-width: 30px;
+      }
     }
 
     .dev-icons .col {

@@ -47,7 +47,7 @@ p {
 }
 
 section {
-  height: 100vh;
+  min-height: 100vh;
 
   &.intro {
     background-color: #252D3A;
